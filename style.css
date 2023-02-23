@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+:root {
+
+    --color1: hsla(0, 100%, 67%, 0.13);
+    --color2: hsla(39, 100%, 56%, 0.103);
+    --color3: hsla(166, 100%, 37%, 0.096);
+    --color4:  hsla(234, 85%, 45%, 0.082);
+    --neutro1: hsl(0, 0%, 100%);
+    --neutro2: hsl(221, 100%, 96%);
+    --neutro3: hsla(241, 100%, 89%, 0.938);
+    --neutro4: hsl(224, 30%, 27%);
+}
+.principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background:linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+    
+}
+.principal__p1 {
+
+    text-align: center;
+    margin: 20px;
+    font-family: 'Hanken Grotesk';
+    color: var(--neutro3);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.principal__circle {
+   
+    display: flex;
+    flex-direction: column;
+   width: 150px;
+   height: 150px;
+   font-size: 3.5rem;
+   font-weight: 800;
+   color:var(--neutro1);
+   font-family: 'Hanken Grotesk';
+   background: linear-gradient(0, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+   border-radius: 100%;
+   text-align: center;
+   padding: 10px;
+   margin-bottom: 5px;
+   
+   /* box-shadow: 0 0 1px   rgb(0,0,0,0.5); */
+
+}
+.principal__pp {
+
+    font-family: 'Hanken Grotesk';
+    font-size: 0.9rem;
+    padding-bottom: 8px ;
+    color:var(--neutro3);
+
+}
+h4 {
+
+    font-family: 'Hanken Grotesk';
+    font-weight: 500;
+    color:  #fff;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+.principal__p3 {
+    
+    
+    color:hsl(241, 100%, 89%);;
+    text-align: center;
+    font-family: 'Hanken Grotesk';
+    font-size: 0.9rem;
+    width: 64%;
+    margin-bottom: 30px;
+}
+h3 {
+
+    color: var(--neutro4);
+    font-family: 'Hanken Grotesk';
+    margin: 25px;
+}
+.cajas {
+
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    font-family: 'Hanken Grotesk';
+    padding: 10px;
+    border-radius: 10px;    
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.summary__Reaction {
+    
+    background: var(--color1);
+    
+
+
+}
+.Reaction {
+    
+    color: hsl(0, 100%, 67%);
+    display:flex;
+}
+.Reaction__p {
+
+    margin-left: 10px;
+}
+.reaction__points {
+   color: var(--neutro4);
+   font-family: 'Hanken Grotesk';
+   font-weight: 800;
+   
+}
+span {
+
+    color:hsl(241, 100%, 89%);
+
+}
+.Memory {
+
+    background-color: var(--color2);
+    color: black;
+}
+.Verbal {
+
+    background-color: var(--color3);
+}
+.Visual {
+
+    background-color: var(--color4) ;
+    
+}
+.Reaction__pM {
+
+    color: hsl(39, 100%, 56%);
+    margin-left: 10px;
+}
+.Reaction__pV {
+
+    color: hsl(166, 100%, 37%);
+    margin-left: 10px;
+}
+.Reaction__pVi {
+
+    color:hsl(234, 85%, 45%);
+    margin-left: 10px;
+}
+.principal__cta {
+
+    display: block;
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(61, 61, 92);
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Hanken Grotesk';
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 1300px) {
+
+body {
+
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+
+    width: 735px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 0 8px  rgb(0,0,0,0.5);
+    border-radius: 15px;
+    
+
+}
+.principal {
+    
+    width: 100%;
+    grid-row: 1/7;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px rgb(0,0,0,0.5);
+}
+.cajas {
+
+    width: 80%;
+}
+.principal__cta {
+
+    width: 50%;
+    margin: 20px auto;
+}
+.principal__circle {
+
+    margin-top: 10px;
+    font-size: 5rem;
+    height: 200px;
+    width: 200px;
+}
+.principal__p1 {
+
+    margin-top: 40px;
+    font-size: 1rem;
+}
+h4 {
+
+    font-size: 2.5rem;
+}
+.principal__p3 {
+
+    width: 85%;
+
+}
+}
